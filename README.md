@@ -6,14 +6,28 @@
 
 **[2026-04-13 — Daily Trading Analysis](./daily-reports/2026-04-13-trading-analysis.md)**
 
+## 🎯 Live Trading Readiness
+
+**Target:** Deploy £500 real capital between **April 20 - May 1, 2026**  
+See full tracker: [LIVE_READINESS.md](./LIVE_READINESS.md)
+
+| Metric | Target | Current |
+|--------|--------|---------|
+| Confidence Score | 75%+ | See daily report |
+| Minimum Data | 7 days | Collecting... |
+| Minimum Trades | 5 closed | See daily report |
+| Deployment Window | Apr 20 → May 1 | Apr 20 → May 1 |
+
+*You will receive a Telegram notification when I'm confident and ready to recommend live trading.*
+
 ## 📊 Quick Stats
 
 | Metric | Value |
 |--------|-------|
-| Latest Portfolio Value | £500.00 |
-| Total P&L | £+0.00 |
-| Open Positions | 2/5 |
-| Unique Pairs Traded | 2 |
+| Latest Portfolio Value | See daily report |
+| Total P&L | See daily report |
+| Open Positions | See daily report |
+| Unique Pairs Traded | See daily report |
 
 ## 📁 Repository Structure
 
@@ -21,9 +35,20 @@
 .
 ├── daily-reports/          # Daily markdown trading reports
 ├── analytics/              # Cumulative performance data (JSON)
+│   ├── performance_history.json
+│   ├── readiness_assessment.json
+│   └── confidence_database.json
 ├── market-data/            # Market condition snapshots
 ├── strategies/             # Strategy evolution and backtests
 ├── insights/               # Actionable trading insights
+│   ├── strategy_upgrades.md
+│   └── *-strategy-insights.md
+├── LIVE_READINESS.md       # Live deployment readiness tracker
+├── scripts/                # Automation scripts
+│   ├── generate_daily_report.py
+│   ├── insight_generator.py
+│   ├── sync_with_trading_bot.py
+│   └── readiness_assessor.py
 └── README.md               # This file
 ```
 
@@ -31,6 +56,42 @@
 
 1. **Multi-Pair Bot v5** — Dry-run portfolio manager monitoring 12 crypto pairs
 2. **ETH Live Trader v4** — Live single-pair bot on KuCoin
+
+## 🔄 Automation Schedule
+
+| Job | Frequency | Time |
+|-----|-----------|------|
+| Daily Analysis Report | Daily | 23:00 UTC |
+| Readiness Assessment | Daily | 09:00 UTC |
+| Trade Closure Monitor | Every 2 min | Continuous |
+
+## 🎯 Live Trading Deployment Plan
+
+I am monitoring the multi-pair bot's dry-run performance to determine when conditions are optimal to deploy **£500 in real capital**.
+
+### What I Need to See Before Recommending Live Trading:
+
+1. **✅ Minimum 7 days of data** — To establish baseline performance
+2. **✅ At least 5 closed trades** — To calculate meaningful win rate
+3. **✅ 40%+ win rate** — Evidence of edge
+4. **✅ Consistent profit trend** — Or at least controlled losses
+5. **✅ Drawdown under 10%** — Risk management validation
+6. **✅ Healthy market conditions** — Bot finding valid opportunities
+
+### When I'll Notify You:
+
+- **Window:** April 20, 2026 → May 1, 2026
+- **Trigger:** Confidence score reaches **75%+**
+- **Method:** Telegram notification with full analysis
+- **Message will include:** Exact recommendation date, confidence breakdown, current bot status, step-by-step live deployment instructions
+
+### Current Status:
+
+🟡 **COLLECTING_DATA** — Bot started April 13, building history
+
+Track progress in [LIVE_READINESS.md](./LIVE_READINESS.md)
+
+---
 
 ## 🔒 Security
 
