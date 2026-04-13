@@ -1,0 +1,47 @@
+# Sensitive Configuration Files
+.env
+.env.*
+*.env
+config.yaml
+secrets.json
+credentials.json
+api_keys.txt
+
+# Trading Bot State Files (contain sensitive session data)
+*state.json
+bot_config.json
+trader_state.json
+guard_state.json
+trades.json
+
+# Log files with potential sensitive data
+*.log
+logs/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+*.tmp
