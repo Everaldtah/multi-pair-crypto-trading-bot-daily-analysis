@@ -437,6 +437,12 @@ def main():
     update_readme(today, multi_data)
     print("✅ README updated")
     
+    # Generate insights and sync with upgrade system
+    print("\n🧠 Generating strategy insights...")
+    os.system(f"cd {REPO_DIR} && python3 scripts/insight_generator.py")
+    os.system(f"cd {REPO_DIR} && python3 scripts/sync_with_trading_bot.py")
+    print("✅ Insights and upgrade sync complete")
+    
     # Push to GitHub
     success = push_to_github(today)
     
