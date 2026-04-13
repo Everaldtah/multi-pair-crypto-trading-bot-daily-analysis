@@ -357,6 +357,25 @@ def push_to_github(today):
     run_cmd('git config user.email "bot@hermes.trading"')
     run_cmd('git config user.name "Hermes Trading Bot"')
     
+    # Get token
+    token = os.getenv("GITHUB_TOKEN", "")
+    if not token:
+        # Try common locations
+        for env_file in ["/root/.env", os.path.expanduser("~/.hermes/.env")]:
+            if Path(env_file).exists():
+                with open(env_file) as f:
+                    for line in f:
+                        if line.startswith("GITHUB_TOKEN="):
+                            token = line.strip().split("=", 1)[1].strip('"\'')
+                            break
+                if token:
+                    break
+    
+    # Set remote URL with token
+    if token:
+        remote_url = f"https://{token}@github.com/Everaldtah/multi-pair-crypto-trading-bot-daily-analysis.git"
+        run_cmd(f"git remote set-url origin {remote_url}")
+    
     # Stage all changes
     stdout, stderr, rc = run_cmd("git add -A")
     if rc != 0:
@@ -378,6 +397,10 @@ def push_to_github(today):
     
     # Push
     stdout, stderr, rc = run_cmd("git push origin main")
+    
+    # Reset remote URL to remove token from history
+    run_cmd("git remote set-url origin https://github.com/Everaldtah/multi-pair-crypto-trading-bot-daily-analysis.git")
+    
     if rc != 0:
         print(f"Git push error: {stderr}")
         return False
