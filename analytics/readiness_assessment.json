@@ -1,0 +1,59 @@
+{
+  "first_run_date": "2026-04-13T11:28:08.897239",
+  "assessments": [
+    {
+      "date": "2026-04-13 11:28:08",
+      "confidence_score": 32.1,
+      "status": "COLLECTING_DATA",
+      "component_scores": {
+        "data_sufficiency": 2.1,
+        "trade_sample": 0.0,
+        "win_rate": 0,
+        "profit_consistency": 0,
+        "drawdown_control": 15,
+        "market_conditions": 15
+      },
+      "bot_snapshot": {
+        "open_positions": 2,
+        "available_cash": 350.0,
+        "total_pnl": 0.0,
+        "total_value": 500.0,
+        "total_buys": 2,
+        "total_sells": 0,
+        "current_positions": [
+          [
+            "ETH-USDT",
+            "2243.19",
+            "+0.00%"
+          ],
+          [
+            "SOL-USDT",
+            "84.49",
+            "+0.46%"
+          ],
+          [
+            "ETH-USDT",
+            "2243.19",
+            "+0.00%"
+          ],
+          [
+            "SOL-USDT",
+            "84.49",
+            "+0.46%"
+          ],
+          [
+            "ETH-USDT",
+            "2243.19",
+            "+0.00%"
+          ]
+        ]
+      },
+      "closed_trades": 0,
+      "days_of_data": 1
+    }
+  ],
+  "current_confidence": 32.1,
+  "ready_date": null,
+  "recommended_capital": 500,
+  "status": "COLLECTING_DATA"
+}

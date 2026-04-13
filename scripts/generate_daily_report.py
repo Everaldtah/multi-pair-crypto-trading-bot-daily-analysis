@@ -128,6 +128,17 @@ def load_monitor_state():
     with open(MONITOR_STATE, 'r') as f:
         return json.load(f)
 
+def get_readiness_status():
+    """Get current live trading readiness status"""
+    readiness_file = Path(REPO_DIR) / "analytics" / "readiness_assessment.json"
+    if not readiness_file.exists():
+        return None
+    with open(readiness_file, 'r') as f:
+        data = json.load(f)
+    if data.get("assessments"):
+        return data["assessments"][-1]
+    return None
+
 def analyze_market_conditions(multi_data):
     """Generate market condition analysis"""
     if not multi_data:
@@ -211,6 +222,7 @@ def generate_daily_report():
     
     market_analysis = analyze_market_conditions(multi_data)
     insights = generate_strategy_insights(multi_data, monitor_state, v4_data)
+    readiness = get_readiness_status()
     
     # Build report
     report = f"""# 📊 Daily Trading Analysis — {today}
@@ -220,6 +232,34 @@ def generate_daily_report():
 **Initial Capital:** £{INITIAL_CAPITAL:.2f}
 
 ---
+
+## 🎯 Live Trading Readiness
+
+"""
+    
+    if readiness:
+        status_emoji = {
+            "READY_TO_DEPLOY": "🟢",
+            "READY_BUT_WAITING_FOR_WINDOW": "🟡",
+            "APPROACHING_READY": "🟡",
+            "BUILDING_CONFIDENCE": "🟠",
+            "COLLECTING_DATA": "🔴"
+        }.get(readiness["status"], "⚪")
+        
+        report += f"""| Metric | Value |
+|--------|-------|
+| Status | {status_emoji} {readiness['status']} |
+| Confidence Score | {readiness['confidence_score']}% / 100% |
+| Days of Data | {readiness['days_of_data']} |
+| Closed Trades | {readiness['closed_trades']} |
+
+**Target:** Deploy £500 live capital between **April 20 - May 1, 2026** when confidence reaches **75%+**
+
+"""
+    else:
+        report += "Readiness assessment not yet available. Running initial data collection phase.\n\n"
+    
+    report += f"""---
 
 ## 💰 Portfolio Performance
 
