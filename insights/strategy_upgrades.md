@@ -4,7 +4,7 @@
 - **Days of Data**: 1
 - **Highest Balance**: £500.00
 - **Closed Trades**: 0
-- **Current P&L**: £+0.00
+- **Current P&L**: £+2.42
 
 ## Recommended Adjustments
 
