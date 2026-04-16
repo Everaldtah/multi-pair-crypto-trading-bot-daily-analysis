@@ -4,16 +4,16 @@
 
 ## 📅 Latest Report
 
-**[2026-04-15 — Daily Trading Analysis](./daily-reports/2026-04-15-trading-analysis.md)**
+**[2026-04-16 — Daily Trading Analysis](./daily-reports/2026-04-16-trading-analysis.md)**
 
 ## 📊 Quick Stats
 
 | Metric | Value |
 |--------|-------|
-| Latest Portfolio Value | £502.42 |
-| Total P&L | £+2.42 |
-| Open Positions | 5/5 |
-| Unique Pairs Traded | 5 |
+| Latest Portfolio Value | £500.00 |
+| Total P&L | £+0.00 |
+| Open Positions | 0/5 |
+| Unique Pairs Traded | 0 |
 
 ## 📁 Repository Structure
 
