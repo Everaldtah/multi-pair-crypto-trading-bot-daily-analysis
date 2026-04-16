@@ -2,7 +2,7 @@
 
 ## Performance Snapshot
 - **Days of Data**: 4
-- **Highest Balance**: £502.42
+- **Highest Balance**: £500.00
 - **Closed Trades**: 0
 - **Current P&L**: £+0.00
 
