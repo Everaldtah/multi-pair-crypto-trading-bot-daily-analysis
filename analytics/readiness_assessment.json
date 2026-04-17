@@ -50,9 +50,41 @@
       },
       "closed_trades": 0,
       "days_of_data": 1
+    },
+    {
+      "date": "2026-04-17 09:45:00",
+      "confidence_score": 25.5,
+      "status": "COLLECTING_DATA",
+      "component_scores": {
+        "data_sufficiency": 7.5,
+        "trade_sample": 0.0,
+        "win_rate": 0,
+        "profit_consistency": 3,
+        "drawdown_control": 10,
+        "market_conditions": 5
+      },
+      "bot_snapshot": {
+        "open_positions": 0,
+        "available_cash": 0.0,
+        "total_pnl": 0.0,
+        "total_value": 0.0,
+        "total_buys": 0,
+        "total_sells": 0,
+        "current_positions": [],
+        "pid": 1287711,
+        "usdt_available": 0.0,
+        "cycles_completed": 626
+      },
+      "closed_trades": 0,
+      "days_of_data": 3.5,
+      "blockers": [
+        "Bot has $0 USDT - cannot trade",
+        "State reset on Apr 16 lost previous data",
+        ".env parsing error with inline comments"
+      ]
     }
   ],
-  "current_confidence": 32.1,
+  "current_confidence": 25.5,
   "ready_date": null,
   "recommended_capital": 500,
   "status": "COLLECTING_DATA"
