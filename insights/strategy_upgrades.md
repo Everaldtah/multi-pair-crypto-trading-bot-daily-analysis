@@ -1,14 +1,16 @@
-# 🔄 Strategy Upgrade Recommendations — 2026-04-17
+# 🔄 Strategy Upgrade Recommendations — 2026-04-18
 
 ## Performance Snapshot
-- **Days of Data**: 5
+- **Days of Data**: 6
 - **Highest Balance**: £71.38
 - **Closed Trades**: 0
 - **Current P&L**: £+0.00
 
 ## Recommended Adjustments
 
-1. ⏳ **Low Exit Rate**: Only 0% of positions closed. Take-profit (+3%) may be too high for current market. Consider trailing stops or TP at +2%.
+1. 🟡 **Low Volatility/Chop**: Portfolio stagnant for multiple days. Consider lowering RSI entry threshold to capture more opportunities.
+
+2. ⏳ **Low Exit Rate**: Only 0% of positions closed. Take-profit (+3%) may be too high for current market. Consider trailing stops or TP at +2%.
 
 ---
 
