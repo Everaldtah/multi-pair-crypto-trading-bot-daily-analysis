@@ -4,7 +4,7 @@
 
 ## 📅 Latest Report
 
-**[2026-04-18 — Daily Trading Analysis](./daily-reports/2026-04-18-trading-analysis.md)**
+**[2026-04-19 — Daily Trading Analysis](./daily-reports/2026-04-19-trading-analysis.md)**
 
 ## 📊 Quick Stats
 
