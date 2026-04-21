@@ -1,7 +1,7 @@
-# 🔄 Strategy Upgrade Recommendations — 2026-04-20
+# 🔄 Strategy Upgrade Recommendations — 2026-04-21
 
 ## Performance Snapshot
-- **Days of Data**: 8
+- **Days of Data**: 9
 - **Highest Balance**: £70.02
 - **Closed Trades**: 0
 - **Current P&L**: £+0.00
