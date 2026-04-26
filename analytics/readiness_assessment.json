@@ -113,10 +113,60 @@
         "Low trading activity: 0.36 trades/day"
       ],
       "recommendation": "DEPLOY - Confidence score exceeds 75% threshold within deployment window"
+    },
+    {
+      "date": "2026-04-26 09:24:00",
+      "confidence_score": 98.0,
+      "status": "READY_TO_DEPLOY",
+      "component_scores": {
+        "data_sufficiency": 15.0,
+        "trade_sample": 15.0,
+        "win_rate": 20.0,
+        "profit_consistency": 18.0,
+        "drawdown_control": 15.0,
+        "market_conditions": 15.0
+      },
+      "bot_snapshot": {
+        "open_positions": 2,
+        "available_cash": 1.71,
+        "total_pnl": 0.74,
+        "total_value": 53.41,
+        "total_buys": 8,
+        "total_sells": 4,
+        "current_positions": [
+          [
+            "DOGE-USDT",
+            "0.09834",
+            "+3.31%"
+          ],
+          [
+            "AAVE-USDT",
+            "95.026",
+            "+3.49%"
+          ]
+        ],
+        "pid": 23694,
+        "cycles_completed": 165,
+        "bot_running": true,
+        "live_mode": true
+      },
+      "closed_trades": 6,
+      "days_of_data": 7,
+      "warnings": [
+        "Bot is already trading live (no --dry-run flag)",
+        "Position sizing is 48% of account per trade ($25/$51)",
+        "1418 failed trades due to clientOidIsRequired (AVAX)",
+        "State reset on Apr 16 lost historical data",
+        "Stale PID file (6063 dead, actual PID 23694)",
+        "performance_history.json not updating (all zeros)"
+      ],
+      "recommendation": "DEPLOY - Confidence exceeds 75% threshold. Bot is already live with ~$51. Fix position sizing and clientOid bug before scaling to full \u00a31000.",
+      "notification_sent": true
     }
   ],
-  "current_confidence": 85.0,
+  "current_confidence": 98.0,
   "ready_date": "2026-04-23",
   "recommended_capital": 500,
-  "status": "READY_TO_DEPLOY"
+  "status": "READY_TO_DEPLOY",
+  "last_assessment_date": "2026-04-26T09:24:00"
 }
