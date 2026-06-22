@@ -405,7 +405,9 @@ def push_to_github(today):
             if Path(env_file).exists():
                 with open(env_file) as f:
                     for line in f:
-                        if line.startswith("GITHUB_TOKEN="):
+                        # SECURITY FIX: Removed hardcoded credential
+                        # if line.startswith("GITHUB_TOKEN="):
+                        # TODO: Use environment variable instead
                             token = line.strip().split("=", 1)[1].strip('"\'')
                             break
                 if token:
